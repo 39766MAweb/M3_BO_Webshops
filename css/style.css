@@ -25,7 +25,7 @@ body{
     color: var(--text-color);
     text-align: center;
     font-size: var(--text-scaling);
-    padding: 30px 20px;
+    padding: 60px 20px;
 }
 
 .homepage-title{
@@ -76,6 +76,12 @@ footer{
     font-size: var(--text-scaling)
 }
 
+.product-header {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
 .products{
     display: flex;
     justify-content: center;
@@ -101,6 +107,73 @@ footer{
 }
 
 .product-button{
-    margin-top: 15px;
+    background-color: var(--button-color);
+    color: var(--text-color);
+    border: none;
+    padding: 6px 14px; 
     font-size: 1.6rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    margin-top: 15px;
+}
+
+.product-button:hover{
+    background-image: radial-gradient(#c95ecb, var(--button-color));
+    transform: scale(1.05);
+}
+
+.product-button:active{
+    transform: scale(0.97);
+}
+
+.hero-section{
+    height: 400px;
+    background-image: url("https://cdnb.artstation.com/p/assets/images/images/033/807/229/large/irene-andersen-hitman3-portfolio-shots-irenea-02.jpg?1610618886");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.hero-content{
+    max-width: 400px;
+    text-align: center;
+    color: var(--text-color);
+    background: rgba(0, 0, 0, 0.3); 
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.hero-title{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-text {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.hero-button{
+    background-color: var(--button-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px 18px; 
+    font-size: 1.6rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.hero-button:hover{
+    background-image: radial-gradient(#c95ecb, var(--button-color));
+    transform: scale(1.05);
+}
+
+.hero-button:active{
+    transform: scale(0.97);
 }
