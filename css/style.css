@@ -206,6 +206,11 @@ footer{
 .product{
     background-color: var(--main-color);
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 10px;    
     width: 150px;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
