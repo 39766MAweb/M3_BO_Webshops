@@ -3,72 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shop</title>
     <link rel="stylesheet" href="css/style.css">
-    <script defer src="java.js"></script>
+    <script defer src="shop.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="homepage-header">
-        <h1 class="homepage-title">Raul's Potion Shop</h1>
 
-        <nav class="homepage-bar">
-            <button class="homepage-button">Home</button>
-             <a href="shop.html"><button class="homepage-button">Shop</button></a>
-            <button class="homepage-button">Cart</button>
-            <button class="homepage-button">FAQ</button>
-        </nav>
+<header class="homepage-header">
+    <h1 class="homepage-title">Raul's Potion Shop</h1>
 
-    </header>
+    <nav class="homepage-bar">
+        <a href="index.html"><button class="homepage-button">Home</button></a>
+        <button class="homepage-button">Shop</button>
+        <button class="homepage-button">Cart</button>
+        <button class="homepage-button">FAQ</button>
+    </nav>
+</header>
 
-<hero class="hero-section">
-    <div class="hero-content">
-        <h2 class="hero-title">Welcome to Briar Industries</h2>
-        <p class="hero-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Vestibulum volutpat nisl nec massa dictum, ac facilisis 
-            sapien aliquam. Lorem ipsum dolor sit amet.
-        </p>
-        <button class="hero-button">Click to view store locations</button>
-    </div>
-</hero>
+<main class="shop-layout">
 
+    <aside class="filter-bar">
+        <h2>Filter by Rarity</h2>
 
-    <main>
-        <div class="main-header">
-            - "Deluxe Potions, Goods & Wares" -
-        </div>
-    </main>
+        <label><input type="checkbox" value="exotic"> Exotic</label>
+        <label><input type="checkbox" value="rare"> Rare</label>
+        <label><input type="checkbox" value="uncommon"> Uncommon</label>
+        <label><input type="checkbox" value="common"> Common</label>
+    </aside>
 
-    <section>
-        <h2 class="product-header">- Potion Reagent Ingredients -</h2>
-    </section>
+    <section class="products" id="product-list">
 
-    <section class="products">
-        <article class="product">
+        <article class="product" data-rarity="rare">
             <img class="product-img" src="https://static.wikia.nocookie.net/roblox-arcane-odyssey/images/a/a8/Stormsalt.png/revision/latest?cb=20231029230214">
             <h3 class="product-price">Stormsalt</h3>
             <div class="product-price">12,500 Drachma</div>
             <button class="product-button">Buy now</button>
         </article>
 
-        <article class="product">
+        <article class="product" data-rarity="rare">
             <img class="product-img" src="https://static.wikia.nocookie.net/roblox-arcane-odyssey/images/9/9e/Auric_Seaweed.png/revision/latest?cb=20231029224210">
             <h3 class="product-price">Auric Seaweed</h3>
             <div class="product-price">2,500 Drachma</div>
             <button class="product-button">Buy now</button>
         </article>
 
-        <article class="product">
+        <article class="product" data-rarity="rare">
             <img class="product-img" src="https://static.wikia.nocookie.net/roblox-arcane-odyssey/images/5/50/Poisonous_Tooth.png/revision/latest?cb=20231029225748">
             <h3 class="product-price">Poisonous Tooth</h3>
             <div class="product-price">25,000 Drachma</div>
             <button class="product-button">Buy now</button>
         </article>
 
-        <article class="product">
+        <article class="product" data-rarity="rare">
             <img class="product-img" src="https://static.wikia.nocookie.net/roblox-arcane-odyssey/images/8/8f/Thornflower.png/revision/latest?cb=20231029224651">
             <h3 class="product-price">Thornflower</h3>
             <div class="product-price">5,000 Drachma</div>
@@ -77,8 +66,7 @@
 
     </section>
 
-    <footer>
-       <p>All rights reserved &#xA9; Briar Industries.</p>
-    </footer>
+</main>
+
 </body>
 </html>

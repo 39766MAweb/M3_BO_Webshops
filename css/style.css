@@ -177,3 +177,35 @@ footer{
 .hero-button:active{
     transform: scale(0.97);
 }
+
+.shop-layout{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.filter-bar{
+    width: 200px;
+    background-color: var(--main-color);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.filter-bar label{
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.product{
+    background-color: var(--main-color);
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+}
