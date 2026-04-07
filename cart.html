@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="javascript/cartDisplay.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="homepage-header">
+    <h1 class="homepage-title">Raul's Potion Shop</h1>
+
+    <nav class="homepage-bar">
+        <a href="index.html"><button class="homepage-button">Home</button></a>
+        <a href="shop.html"><button class="homepage-button">Shop</button></a>
+        <a href="cart.html"><button class="homepage-button">Cart</button></a>   
+        <button class="homepage-button">FAQ</button>
+    </nav>
+</header>
+
+<main>
+
+    <div class="main-header">
+        - Your Shopping Cart -
+    </div>
+
+    <section>
+        <h2 class="product-header">- Items -</h2>
+    </section>
+
+    <section id="cart-items" class="products"></section>
+
+    <div id="total-price" class="main-header"></div>
+
+    <div style="display:flex; justify-content:center; margin:20px;">
+        <button id="clear-cart" class="homepage-button">Clear Cart</button>
+    </div>
+
+</main>
+
+<footer>
+    <p>All rights reserved &#xA9; Briar Industries.</p>
+</footer>
+
+</body>
+</html>
